@@ -1,1 +1,137 @@
-/* Compile your LESS file! */
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html body {
+  width: 75%;
+  height: 100%;
+  margin: auto;
+}
+html h1 {
+  font-size: 1.52rem;
+}
+html h2,
+html h3 {
+  font-size: 24px;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  flex-basis: 80%;
+  margin-top: 1.4rem;
+}
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-basis: 80%;
+    margin-top: 1.4rem;
+  }
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.4rem;
+  padding: 1%;
+}
+p {
+  font-size: 1.4rem;
+}
+.background {
+  margin: auto;
+  height: auto;
+  background: lightgray;
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 500px) {
+  .background {
+    margin: auto;
+    height: auto;
+    background: lightgray;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.container2 {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15%;
+}
+img {
+  height: 200px;
+  width: 200px;
+  margin: 25% 25%;
+}
+.container2 a {
+  justify-content: center;
+  text-decoration: none;
+  padding: 3% 15%;
+  background-color: gray;
+  color: black;
+  border-radius: 7%;
+  box-shadow: 3px 3px 5px 5px #d3d3d3;
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .container2 a {
+    justify-content: center;
+    text-decoration: none;
+    padding: 3% 3%;
+    background-color: gray;
+    color: black;
+    border-radius: 7%;
+    box-shadow: 3px 3px 5px 5px #d3d3d3;
+    font-size: 1.2rem;
+  }
+}
+.container1 {
+  margin: 5% auto;
+}
+.container2 {
+  margin: 5% auto;
+}
+.hero {
+  display: flex;
+  flex-direction: row;
+}
+.hero .container3 {
+  width: 55%;
+  margin: 2% 5%;
+}
+.hero .list {
+  margin: auto;
+  border: 1px solid gray;
+}
+.hero .list p {
+  color: indigo;
+  font-size: 24px;
+  border: 1px solid gray;
+}
+.work div {
+  width: 80%;
+  display: flex;
+}
+.work div p {
+  font-weight: bold;
+}
+.work div .group {
+  display: flex;
+}
+.job1 {
+  background: lightgray;
+}
+.job3 {
+  background: lightgray;
+}
+footer {
+  padding: 5%;
+  background: lightgray;
+}
+footer p {
+  margin: auto 40%;
+}

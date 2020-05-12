@@ -1,59 +1,163 @@
-// Is this working?
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 
 /* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
 }
+@backgroundheader: lightgray;
 
-html, body {
-    height: 100%;
+html { 
+	body {
+	width: 75%;
+	height: 100%;
+	margin: auto;
+	}
+	h1 {
+		font-size: 1.52rem;
+	}
+	h2,h3{
+		font-size: 24px;
+	}
 }
+nav {
+	display: flex;
+	justify-content: flex-end;
+	flex-basis: 80%;
+	margin-top: 1.4rem;
+	@media (max-width: 500px){
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		flex-basis: 80%;
+		margin-top: 1.4rem;
+		margin-left 30%;
+	}
+	
+
+
+	a{
+		text-decoration: none;
+		color: black;
+		font-size: 1.4rem;
+		padding: 1%;
+	}
+}
+p {
+	font-size: 1.4rem;
+}
+
+
+
+.background {
+	margin: auto;
+	height: auto;
+	background: @backgroundheader;
+	display: flex;
+	flex-direction: row;
+	@media (max-width: 500px){
+		margin: auto;
+		height: auto;
+		background: @backgroundheader;
+		display: flex;
+		flex-direction: column;
+}
+}
+	.container2{
+		width: 60%;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+		padding: 15%;
+	}
+	
+	img {
+		height: 200px;
+		width: 200px;
+		margin: 25% 25%;
+	}
+	.container2 a {
+		justify-content: center;
+		text-decoration: none;
+		padding: 3% 15%;
+		background-color: gray;
+		color: black;
+		border-radius: 7%;
+		box-shadow: 3px 3px 5px 5px #d3d3d3;
+		font-size: 2rem;
+	
+@media (max-width: 500px) {
+	justify-content: center;
+	text-decoration: none;
+	padding: 3% 3%;
+	background-color: gray;
+	color: black;
+	border-radius: 7%;
+	box-shadow: 3px 3px 5px 5px #d3d3d3;
+	font-size: 1.2rem;
+}
+}	
+		
+
+
+ .container1 {
+	 margin: 5% auto;
+ }
+
+.container2 {
+	margin: 5% auto;
+}
+
+.hero {
+	display: flex;
+	flex-direction: row;
+
+	.container3{
+		width: 55%;
+		margin: 2% 5%;
+	}
+	.list {
+		margin: auto;
+		border: 1px solid gray;
+		p{
+			color: indigo;
+			font-size: 24px;
+			border: 1px solid gray;
+
+
+			
+		}
+	}
+	
+}
+	.work{ 
+	 	div {
+		width:80%;
+		display: flex;
+		p {
+			font-weight: bold;
+		}
+		.group {
+			display: flex;
+		}
+		
+	
+		 }
+}
+	.job1{
+	background: @backgroundheader;
+	}
+	
+	.job3{
+		background: @backgroundheader;
+		}
+footer {
+	padding: 5%;
+	background: @backgroundheader;
+	
+	p{
+		margin: auto 40%;
+	}
+}
+
 
